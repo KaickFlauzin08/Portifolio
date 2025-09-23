@@ -194,7 +194,7 @@ h5{
     color: black;
 }
 
-/**/
+/*  CARDSSSSSSSS  */
 
 .Front-end{
     width: auto;
@@ -226,30 +226,30 @@ figcaption{
     gap: 16px;
   }
 
-/* === CSS para o Footer Pessoal/Portfólio === */
+/* FOOTER */
 
 .footer-pessoal {
-    background-color: #000000; /* Um azul escuro, cor de fundo */
-    color: #ecf0f1; /* Cor do texto clara */
+    background-color: #000000; 
+    color: #ecf0f1; 
     text-align: center;
     padding: 20px 15px;
-    margin-top: 40px; /* Espaço para separar do conteúdo principal */
+    margin-top: 40px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 0.9em;
 }
 
 .footer-pessoal p {
-    margin: 5px 0; /* Espaçamento entre os parágrafos */
+    margin: 5px 0; 
 }
 
 .footer-pessoal a {
-    color: #ffffff; /* Cor dos links - um azul vibrante */
+    color: #ffffff; 
     text-decoration: none;
-    margin: 0 10px; /* Espaçamento entre os links */
-    transition: color 0.3s ease; /* Efeito de transição suave */
+    margin: 0 10px; 
+    transition: color 0.3s ease; 
 }
 
 .footer-pessoal a:hover {
-    color: #ff000d; /* Cor do link ao passar o mouse */
+    color: #ff000d; 
     text-decoration: underline;
 }
