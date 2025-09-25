@@ -214,6 +214,7 @@ h5 {
     font-size: 24px;
     margin-bottom: 40px;
     color: black;
+    margin-right:1000px;
 }
 
 /* === CARDSSSSSSSS === */
@@ -225,7 +226,12 @@ h5 {
     padding: 0 20px; 
     justify-content: center;
 }
-
+a img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+}
 figure{
     align-items: center;
     justify-content: center;
@@ -241,11 +247,6 @@ figcaption{
     color: black;
     width: 200px;
 }
-.Front-end {
-    display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    gap: 16px;
-  }
 
 /* === FOOTER === */
 
@@ -280,7 +281,6 @@ figcaption{
     header {
         background: black;
         height: auto; 
-        padding-bottom: 50px;
     }
 
     nav {
@@ -316,7 +316,9 @@ figcaption{
         font-size: 48px;
         color: white; 
     }
-
+    h5{
+        margin-right: 200px;
+    }
     .esquerda p {
         color: #ccc; 
     }
@@ -332,7 +334,6 @@ figcaption{
     }
 
     .separacao {
-        clip-path: none; 
         height: auto;
         padding: 40px 20px;
         text-align: center;
