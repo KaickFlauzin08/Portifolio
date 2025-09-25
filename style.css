@@ -128,14 +128,16 @@ h1{
     position: absolute;
 }
 
-.esquerda-meio{
-width: 1148px;
-margin-right: 600px;
-padding-top: 20px;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 30px;
+.esquerda-meio {
+    max-width: 1148px; 
+    width: 90%; 
+    margin-right: auto; 
+    margin-left: auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 .esquerda-meio-baixo {
@@ -174,8 +176,10 @@ gap: 30px;
     border-bottom:  10px solid #000000;
 }
 
-.sobre-mim-text p{
-    width: 763px;
+.sobre-mim-text p {
+    max-width: 763px;
+    width: 100%;
+    padding: 0 15px;
 }
 span{
     color: #FFD700;
@@ -204,26 +208,23 @@ span{
     border-top: 10px solid #080808;
     border-bottom:  10px solid #000000;
 }
-h5{
+h5 {
     font-family: 'Montserrat Alternates';
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: large;
-    padding-right: 600px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
     color: black;
 }
 
 /* === CARDSSSSSSSS === */
 
-.Front-end{
-    width: auto;
-    height: auto;
-    display: flex;
+.Front-end {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 0 20px; 
     justify-content: center;
-    flex-wrap: wrap;
 }
-
 
 figure{
     align-items: center;
@@ -272,4 +273,92 @@ figcaption{
 .footer-pessoal a:hover {
     color: #ff000d; 
     text-decoration: underline;
+}
+
+/* === Para Tablets (até 768px) === */
+@media (max-width: 768px) {
+    header {
+        background: black;
+        height: auto; 
+        padding-bottom: 50px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav img {
+        margin: 0; 
+        margin-right: 20px;
+    }
+    nav button{
+        margin-right: 20px;
+    }
+    .nav-nav {
+        margin: 0; 
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Tela-Inicial {
+        text-align: center;
+        margin: 40px 20px 0 20px; 
+        gap: 30px;
+    }
+    .esquerda a {
+        color: #FFD700; 
+    }
+    h1 {
+        font-size: 48px;
+        color: white; 
+    }
+
+    .esquerda p {
+        color: #ccc; 
+    }
+    
+    .direita img {
+        width: 100%;
+        max-width: 380px;
+        margin-top: 30px; 
+    }
+    
+    .Midias {
+    display: none;
+    }
+
+    .separacao {
+        clip-path: none; 
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .separacao img {
+     display: none;
+    }
+
+    .esquerda-meio {
+        align-items: center; 
+    }
+
+    .sobre-mim-text {
+        padding: 80px 20px;
+        gap: 50px;
+    }
+
+    .sobre-mim-text h3, .sobre-mim-text h4 {
+        width: 100%; 
+        font-size: 32px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .Front-end {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
